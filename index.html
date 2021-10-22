@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Rock Cafe</title>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Raleway&family=Roboto&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+
+    <!-- Style sheet links -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="main__container">
+
+        <!-- Header Section -->
+
+        <header class="navigation">
+            <a href="./index.html" id="logo">Hard Rock <br> Cafe</a>
+            <div class="nav_links">
+                <a href="./index.html">Home</a>
+                <a href="#menubox">Menu</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="btn_header">
+                <button class="header_btn lg-screen">Sign Up</button>
+                <button class="header_btn lg-screen login-btn">Log In</button>
+            </div>
+            <i class="fas fa-bars bars"></i>
+            <div class="sidebar">
+                <div class="side_nav_links">
+                    <a href="#">Home</a>
+                    <a href="#menubox">Menu</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                </div>
+                <div class="btn_header side_btn">
+                    <button class="header_btn mob">Sign Up</button>
+                    <button class="header_btn mob login-btn">Log In</button>
+                </div>
+            </div>
+
+            <!-- Sign Up / Login -->
+            <div class="auth_login">
+                    <i class="fas fa-times login_form"></i>
+                    <p class="login_heading">Log In</p>
+                    <div class="login_field">
+                        <input type="text" placeholder="Email Address">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <button class="login_btn">Log In</button>                    
+            </div>
+        </header>
+
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+            <img src="IMG/Image/hero bg.jpg" class="bg_img" alt="bg">
+            <img src="IMG/Image/mob.jpg" class="mob_bg_img" alt="bg">
+            <div class="bg-dark"></div>
+            <div class="hero__text">
+                <p>Hard Rock <br> Cafe</p>
+                <p>Discover your favorite food & Recipes</p>
+            </div>
+            <a href="#specialfood"><i class="far fa-arrow-alt-circle-down arr_down"></i></a>
+        </section>
+
+
+        <!-- special food Section -->
+
+        <section class="special_food_container">
+            <div class="special_food">
+                <div class="heading-container">
+                    <p class="heading" id="specialfood">Our Famous Food</p>
+                </div>
+
+                <div class="food">
+                    <img src="./IMG/Image/Chicken Biryani.png" alt="foodimg">
+                    <div class="food_text">
+                        <p>Chicken Biriyani</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="food">
+                    <img src="./IMG/Image/Goenka's Sweets.jpg" alt="foodimg">
+                    <div class="food_text">
+                        <p>Goenka's Sweets</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                
+                <div class="food">
+                    <img src="./IMG/Image/Kerala Fish Fry.jpg" alt="foodimg">
+                    <div class="food_text">
+                        <p>Kerala Fish Fry</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Menu Section -->
+        <section class="menu__container">
+            <div class="menu" id="menubox">
+                <div class="search-box">
+                    <input type="text" placeholder="search for food" class="search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

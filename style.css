@@ -1,0 +1,422 @@
+:root{
+    --primary-color: #ECF1F2;
+    --secondary-color: #050707;
+    --btn-color: #F4D800;
+    --cards: #F5F5F5;
+}
+
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__container{
+    position: relative;
+}
+
+
+
+
+
+/* Header Section */
+
+.main__container a{
+    text-decoration: none;
+}
+
+#logo{
+    font-size: 1.15rem;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+}
+
+.main__container .navigation{
+    position: fixed;
+    width: 100vw;
+    height: 8%;
+    padding: 2% 10% 2% 10%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.navigation a{
+    color: var(--primary-color);
+}
+
+.navigation .nav_links a{
+    padding-left: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation .btn_header .header_btn{
+    width: 70px;
+    height: 36px;
+    padding: 5px;
+    margin-left: .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn_header button:first-child{
+    background-color: var(--btn-color);
+}
+
+.navigation .nav_links a:hover{
+    color: #cecece;
+}
+.btn_header button:first-child:hover{
+    background-color: #dfc505;
+}
+
+.navigation .sidebar{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: #cecece;
+    font-family: 'Roboto',sans-serif;
+    transform: translate(10000px);
+    transition: all 500ms;
+}
+
+.navigation .sidebar.show{
+    opacity: 1;
+    transform: none;
+}
+
+.navigation .fas.bars{
+    color: #cecece;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/* Login/signup */
+
+.navigation .auth_login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-1000%) translateX(-50%);
+    padding: 2em;
+    background-color: var(--primary-color);
+    height: 450px;
+    min-width: 300px;
+    max-width: 500px;
+    color: var(--secondary-color);
+    opacity: 0;
+    transition: 100ms ease-in-out;
+}
+.navigation .auth_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+}
+.navigation .auth_login .fas.fa-times{
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.navigation .auth_login .login_heading{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.navigation .auth_login .login_field input{
+    margin-top: 1em;
+    padding: .5em;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+.navigation .auth_login .login_btn{
+    width: 70px;
+    height: 36px;
+    padding: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background-color: var(--btn-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+/* Login animate */
+.navigation .auth_login.show{
+    opacity: 1;
+    transform: translateX(-50%) translateY(25%);
+}
+
+/* Hero Section */
+
+.hero{
+    position: relative;
+    height: 100vh;
+}
+
+.hero .bg_img, .mob_bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+}
+.hero .mob_bg_img{
+    display: none;
+}
+
+.hero .bg-dark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    opacity: .57;
+}
+
+.hero .hero__text{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.hero__text p{
+    color: var(--primary-color);
+    margin-bottom: 0.4em;
+}
+
+.hero .hero__text p:first-child{
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: 'Lobster Two', cursive;
+}
+
+.hero__text p:last-child{
+    font-size: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+}
+
+.hero a .arr_down{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    font-size: 3.0rem;
+    color: var(--primary-color);
+}
+
+
+
+/* special_food_container */
+
+.special_food_container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.special_food_container .special_food{
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.special_food .heading-container{
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+.special_food .heading{
+    font-size: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+    text-align: center
+}
+.special_food .heading::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--btn-color);
+}
+.special_food .food{
+    display: flex;
+    align-items: center;
+    min-width: 550px;
+    width: 60%;
+    margin: 0 auto 3% auto;
+    background-color: var(--cards);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+.special_food .food img{
+    min-width: 200px;
+    height: 200px;
+}
+.special_food .food .food_text{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto',sans-serif;
+    padding: 5% 10%;
+}
+.special_food .food .food_text p:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+.special_food .food .food_text p:last-child{
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+/* Menu section */
+
+.menu__container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+.menu__container .menu{
+    width: 100%;
+    padding: 8em 0 0 0;
+}
+.menu__container .menu .search-box{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.menu__container .menu .search-box .search{
+    padding: 1em;
+    width: 90%;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* Media queries */
+
+@media (max-width: 820px) {
+    
+    .navigation .nav_links, .btn_header .header_btn.lg-screen{
+        display: none;
+    }
+    .navigation .fas.bars{
+        display: block;
+    }
+
+    .navigation .sidebar .btn_header.side_btn .header_btn.mob{
+        display: block;
+        margin-top: 5%;
+    }
+
+    .navigation .sidebar{
+        display: block;
+    }
+
+    .navigation .side_nav_links{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        align-items: center;
+    }
+    .side_nav_links a{
+        margin-top: 9%;
+    }
+    .sidebar .btn_header.side_btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero .bg_img{
+        display: none;
+    }
+    .hero .mob_bg_img{
+        display: block;
+        height: 100vh;
+    }
+    .hero__text p{
+        color: var(--primary-color);
+    }
+    .hero__text p:first-child{
+        font-size: 1em;
+    }
+    .hero a .arr_down{
+        margin-top: 15%;
+        color: var(--primary-color);
+    }
+}
+
+
+
+/* our famous food section */
+@media (max-width: 428px){
+    .special_food .food{
+        flex-direction: column;
+        min-width: 250px;
+        width: 60%;
+        padding: 5% 0 0 0;
+        overflow-x: hidden;
+    }
+    .special_food .food img{
+        border-radius: 6px;
+    }
+    .special_food .food .food_text p:first-child{
+        font-size: 1.2rem;
+        padding-top: 4%;
+        text-align: center;
+    }
+    .special_food .food .food_text p:last-child{
+        font-size: .9em;
+    }
+}
