@@ -342,6 +342,41 @@
 }
 
 
+/* Menu cards */
+.menu__container .menu_cards{
+    width: 100%;
+    height: 100%;
+    padding: 10% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__container .menu_cards .cards{
+    width: 240px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cards);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.menu_cards .cards img{
+    width: 150px;
+    height: 150px;
+}
+.menu_cards .cards .card_info{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    color: var(--secondary-color);
+}
+.menu_cards .cards .card_info p:first-child{
+    font-size: 1.3rem;
+    margin: 1em 0;
+}
+.menu_cards .cards .card_info p:last-child{
+    padding: 0 5%;
+}
+
 
 /* Media queries */
 
