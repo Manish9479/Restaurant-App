@@ -33,3 +33,16 @@ mobLoginBtn.addEventListener('click', ()=>{
 cancelIcon.addEventListener('click', ()=>{
     loginForm.classList.remove('show');    
 })
+
+
+// Initialize swiper
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

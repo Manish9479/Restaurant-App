@@ -20,7 +20,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
 
     <!-- Style sheet links -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- swiper js -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
 </head>
 
@@ -162,48 +169,66 @@
                         </div>
                     </div>
                 </div>
-                <button class="food_menu_more">
-                    <a href="#">View more</a>
-                </button>
+                <button class="food_menu_more">View more</button>
             </div>
         </section>
 
 
+        <!-- article section -->
         <section class="article">
-            <div class="cards-inner">
-                <i class="fas fa-chevron-left"></i>
-                <div class="card">
-                    <img src="./IMG/Image/user.png" alt="resturant img">
-                    <div class="card-body">
-                        <h3 class="card-title">Lorem, ipsum.
-                        </h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat culpa saepe eaque beatae, cumque commodi esse non possimus perferendis qui.</p>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/no0yk9dv0f5o0nbdmsfy" alt="resturant img">
+                            <div class="card-body">
+                                <h3 class="card-title">Royal Handi
+                                </h3>
+                                <p class="card-text">60% off up to ₹120 | Use code <b>TRYNEW</b></p>
+                                <p class="card-text">20% off up to ₹125 | Use <b>FEDERAL125</b> Above ₹500</p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dr5aflzisbsyi4ntu6th" alt="resturant img">
+                            <div class="card-body">
+                                <h3 class="card-title">Chai Point</h3>
+                                <p class="card-text">60% off up to 120 | use code <b>STEALDEAL</b></p>
+                                <p class="card-text">20% off | use code <b>PARTY</b></p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vwhdhoaimosldtvdl7tu" alt="resturant img">
+                            <div class="card-body">
+                                <h3 class="card-title">Bon Appetite</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisici60% off up to ₹120 | Use code <b>TRYNEW</b></p>
+                                <p class="card-text">15% off | Use code <b>PARTY</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
     
-                <div class="card">
-                    <img src="./IMG/Image/user.png" alt="resturant img">
-                    <div class="card-body">
-                        <h3 class="card-title">Lorem, ipsum.</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aspernatur amet sint a doloribus fugit expedita voluptatem labore repellat explicabo.</p>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <img src="./IMG/Image/user.png" alt="resturant img">
-                    <div class="card-body">
-                        <h3 class="card-title">Lorem, ipsum.</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tempora asperiores aliquam cum nulla tempore, dolorum aperiam commodi provident eos.</p>
-                    </div>
-                </div>
-                <i class="fas fa-chevron-right"></i>  
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
-
-
     </div>
 
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 
