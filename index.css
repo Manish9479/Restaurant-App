@@ -123,6 +123,7 @@
     color: var(--secondary-color);
     opacity: 0;
     transition: 100ms ease-in-out;
+    z-index: 10;
 }
 .navigation .auth_login{
     display: flex;
@@ -170,6 +171,23 @@
 .navigation .auth_login.show{
     opacity: 1;
     transform: translateX(-50%) translateY(25%);
+}
+
+/* overlay */
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
 }
 
 /* Hero Section */

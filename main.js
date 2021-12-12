@@ -4,6 +4,8 @@ let sidebar = document.querySelector('.sidebar');
 let login = document.querySelector('.auth_login');
 let loginForm = document.querySelector('.auth_login');
 
+// overlay
+const overlay = document.getElementById('overlay')
 
 // buttons
 let lgLoginBtn = document.querySelector('.lg-screen.login-btn');
@@ -23,6 +25,7 @@ hamburger.addEventListener('click', ()=>{
 
 lgLoginBtn.addEventListener('click',()=>{
     loginForm.classList.add('show');
+    overlay.classList.add('active')
 })
 
 mobLoginBtn.addEventListener('click', ()=>{
@@ -31,9 +34,15 @@ mobLoginBtn.addEventListener('click', ()=>{
 })
 
 cancelIcon.addEventListener('click', ()=>{
-    loginForm.classList.remove('show');    
+    loginForm.classList.remove('show');
+    overlay.classList.remove('active')   
 })
 
+// overlay
+overlay.addEventListener('click',()=>{
+  overlay.classList.remove('active')
+  loginForm.classList.remove('show')
+})
 
 // Initialize swiper
 const swiper = new Swiper('.swiper', {
