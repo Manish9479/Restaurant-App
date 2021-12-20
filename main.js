@@ -1,10 +1,7 @@
+import { lgLoginBtn, mobLoginBtn } from './js/auth.js'
+
 let hamburger = document.querySelector('.fas.fa-bars');
 let sidebar = document.querySelector('.sidebar');
-
-// buttons
-let lgLoginBtn = document.querySelector('.lg-screen.login-btn');
-let mobLoginBtn = document.querySelector('.mob.login-btn');
-
 
 // Mobile Bar
 hamburger.addEventListener('click', ()=>{

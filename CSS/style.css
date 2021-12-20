@@ -4,22 +4,218 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .menu-contianer {
   width: 100%;
   height: 100vh;
 }
-
-/* menu navigation */
 .menu-contianer .menu__nav {
   display: flex;
   justify-content: space-between;
   padding: 1% 10%;
 }
-
-.menu-contianer .menu__nav #logo {
+.menu-contianer #logo {
   font-family: "Lobster Two", cursive;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 9%;
+  background-color: #050707;
+}
+header #logo {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  color: #ECF1F2;
+}
+header .links {
+  display: flex;
+}
+header .links a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 2em 0 1.1em;
+  color: #ECF1F2;
+}
+header .links a:hover {
+  color: #cecece;
+}
+header .login-btn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #ECF1F2;
+  transition: background-color 200ms;
+}
+header .login-btn a {
+  color: #050707;
+  font-weight: 500;
+}
+
+.form_container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.form_container .signup__container {
+  max-width: 90%;
+  width: 400px;
+  background-color: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
+  border-radius: 9px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form_container .signup__container .google_sign-up {
+  background: none;
+  border: none;
+  outline: none;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.form_container .signup__container .google_sign-up img {
+  width: 20px;
+  height: 20px;
+}
+.form_container .signup__container > div {
+  padding-top: 0.8em;
+}
+.form_container .signup__container .signup__form div {
+  margin-top: 0.9rem;
+}
+.form_container .signup__container .signup__form div label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.form_container .signup__container .signup__form div input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  max-width: 95%;
+  width: 300px;
+  padding: 0.6em 1em;
+  background-color: none;
+  border: 0.1em solid #050707;
+  border-radius: 6px;
+}
+.form_container .signup__container .signup__form .signup__btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.8em 1em;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #0000FF;
+  color: #ECF1F2;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 9%;
+  background-color: #050707;
+}
+header #logo {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Lobster Two", cursive;
+  color: #ECF1F2;
+}
+header .links {
+  display: flex;
+}
+header .links a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 2em 0 1.1em;
+  color: #ECF1F2;
+}
+header .links a:hover {
+  color: #cecece;
+}
+header .login-btn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #ECF1F2;
+  transition: background-color 200ms;
+}
+header .login-btn a {
+  color: #050707;
+  font-weight: 500;
+}
+
+.form_container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.form_container .signin__container {
+  max-width: 90%;
+  width: 400px;
+  background-color: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
+  border-radius: 9px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form_container .signin__container .google_sign-in {
+  background: none;
+  border: none;
+  outline: none;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.form_container .signin__container .google_sign-in img {
+  width: 20px;
+  height: 20px;
+}
+.form_container .signin__container > div {
+  padding-top: 0.8em;
+}
+.form_container .signin__container .signin__form div {
+  margin-top: 0.9rem;
+}
+.form_container .signin__container .signin__form div label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.form_container .signin__container .signin__form div input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  max-width: 95%;
+  width: 300px;
+  padding: 0.6em 1em;
+  background-color: none;
+  border: 0.1em solid #050707;
+  border-radius: 6px;
+}
+.form_container .signin__container .signin__form .signin__btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.8em 1em;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #0000FF;
+  color: #ECF1F2;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
