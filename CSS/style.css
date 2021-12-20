@@ -103,6 +103,7 @@ header .login-btn a {
   background-color: none;
   border: 0.1em solid #050707;
   border-radius: 6px;
+  outline: none;
 }
 .form_container .signup__container .signup__form .signup__btn {
   display: block;
@@ -202,6 +203,7 @@ header .login-btn a {
   background-color: none;
   border: 0.1em solid #050707;
   border-radius: 6px;
+  outline: none;
 }
 .form_container .signin__container .signin__form .signin__btn {
   display: block;
