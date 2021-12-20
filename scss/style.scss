@@ -1,1 +1,4 @@
-@import './default'
+@use './default';
+
+// components
+@use './components/menu'

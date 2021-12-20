@@ -1,2 +1,25 @@
-*,::after,::before{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-contianer {
+  width: 100%;
+  height: 100vh;
+}
+
+/* menu navigation */
+.menu-contianer .menu__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 10%;
+}
+
+.menu-contianer .menu__nav #logo {
+  font-family: "Lobster Two", cursive;
+}
+
 /*# sourceMappingURL=style.css.map */
