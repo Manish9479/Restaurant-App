@@ -1,46 +1,9 @@
 @use '../assets/colors';
 
 header{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5% 9%;
-    background-color: colors.$secondary-color;
 
-    #logo{
-        font-size: 1rem;
-        text-align: center;
-        font-family: 'Lobster Two', cursive;
-        color: colors.$primary-color;
-    }
+    // rest are from _signup.scss
 
-    .links{
-        display: flex;
-        
-        a{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 0 2em 0 1.1em;
-            color: colors.$primary-color;
-
-            &:hover{
-                color: colors.$link-state-change;
-            }
-        }
-    }
-
-    .login-btn{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 5px 10px;
-        border-radius: 6px;
-        background-color: colors.$primary-color;
-        transition: background-color 200ms;
-        
-        a{
-            color: colors.$secondary-color;
-            font-weight: 500;
-        }
-    }
 }
 
 .form_container{

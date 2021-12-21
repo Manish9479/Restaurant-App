@@ -1,5 +1,7 @@
-// buttons
-let lgLoginBtn = document.querySelector('.lg-screen.login-btn');
-let mobLoginBtn = document.querySelector('.mob.login-btn');
+let hamburger = document.querySelector('.fas.fa-bars');
+let sidebar = document.querySelector('.sidebar');
 
-export { lgLoginBtn, mobLoginBtn };
+// Mobile Bar
+hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('show');
+});
