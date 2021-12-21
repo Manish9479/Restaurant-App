@@ -84,6 +84,7 @@
 }
 
 .navigation .sidebar{
+    display: none;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -93,8 +94,8 @@
     background-color: var(--secondary-color);
     color: #cecece;
     font-family: 'Roboto',sans-serif;
+    transform: translate(10000px);
     transition: opacity 400ms;
-    pointer-events: none;
 }
 
 .navigation .sidebar.show{
