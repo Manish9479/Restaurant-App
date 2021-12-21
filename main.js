@@ -1,5 +1,3 @@
-import { lgLoginBtn, mobLoginBtn } from './js/auth.js'
-
 let hamburger = document.querySelector('.fas.fa-bars');
 let sidebar = document.querySelector('.sidebar');
 
