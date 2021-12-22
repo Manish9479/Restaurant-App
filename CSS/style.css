@@ -150,6 +150,14 @@ header .sidebar.show {
   border-radius: 6px;
   outline: none;
 }
+.form_container .signup__container .signup__form div #email-err {
+  font-family: "Poppins", sans-serif;
+  color: red;
+}
+.form_container .signup__container .signup__form div #passwd-err {
+  font-family: "Poppins", sans-serif;
+  color: red;
+}
 .form_container .signup__container .signup__form .signup__btn {
   display: block;
   margin: 2rem auto;

@@ -154,6 +154,16 @@ header{
                     border-radius: 6px;
                     outline: none;
                 }
+
+                #email-err{
+                    font-family: 'Poppins',sans-serif;
+                    color: red;
+                }
+
+                #passwd-err{
+                    font-family: 'Poppins',sans-serif;
+                    color: red;
+                }
             }
 
             .signup__btn{
@@ -173,7 +183,6 @@ header{
         }
     }
 }
-
 
 
 
